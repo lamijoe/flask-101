@@ -20,6 +20,9 @@ PRODUCTS = {
 def hello():
     return "Hello Joe!"
 
+@app.route(f'{BASE_URL}')
+def bienvenue():
+    return "Bienvenue sur l'API"
 
 @app.route(f'{BASE_URL}/products')
 def products():
